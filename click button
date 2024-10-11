@@ -1,0 +1,19 @@
+My first js code that worked 
+https://codepen.io/asdrasnyv/pen/qBeROmM?editors=1010
+
+<html>
+  <head>
+    <title>Exemplo 1</title>
+  </head>
+  <body>
+    <h1>Contador de Cliques</h1>
+    <button id="ClickButton">Clique Aqui</button>
+    <p>Total de clicks: <span id="ClickCount">0</span></p>
+  </body>
+</html>
+
+var ClickCount = 0;
+document.getElementById('ClickButton').addEventListener('click', function() {
+  ClickCount++;
+  document.getElementById('ClickCount').textContent = ClickCount; 
+});
